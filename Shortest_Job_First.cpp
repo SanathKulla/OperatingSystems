@@ -58,7 +58,7 @@ class priority_queue{
          v.push_back(cur);
          int child = v.size() - 1;
          int par = (child - 1)/2;
-         while(v[par].bt > v[child].bt or  (v[par].bt == v[child].bt and v[par].at > v[child].at) ){
+         while(v[par].bt > v[child].bt or  (v[par].bt == v[child].bt and v[par].at > v[child].at) or(v[par].bt == v[child].bt and v[par].at ==  v[child].at && v[par].id > v[child].id) ){
               swap(v[par],v[child]);
               child = par;
               par = (child - 1)/2;
