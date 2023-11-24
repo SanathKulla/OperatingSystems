@@ -73,7 +73,7 @@ int main(){
     // by sorting and two pointers
 
     sort(v.begin() , v.end());
-    int l = 0 , r = n-1;
+    int l = -1 , r = n;
     for(int i=0; i<n; i++){
             if(v[i] <= head)l = i;
     }
