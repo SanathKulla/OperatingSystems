@@ -13,10 +13,9 @@ int main(){
     int hits = 0;
     int sz = 0;
     for(int i = 0;i<n;i++){
+        int val = s[i]-'0';
         if(vis[val]){
             ++hits;
-        int val = s[i]-'0';
-
             continue;
         }
         if(sz < m){
@@ -47,7 +46,7 @@ int main(){
     cout<<n-hits<<endl;
 }
 
-/*           NlogN code        */
+/*           Nlog(10) code        */
 // using sanath = __int128;
 // #include<bits/stdc++.h>
 // using namespace std;
